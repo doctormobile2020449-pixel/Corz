@@ -15,12 +15,9 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Install Gradle & Generate Wrapper
+      - name: Setup Gradle Wrapper
         run: |
-          sudo apt-get update && sudo apt-get install -y gradle
-          if [ ! -f "gradlew" ]; then
-            gradle wrapper
-          fi
+          gradle wrapper --gradle-version 8.5
           chmod +x gradlew
 
       - name: Build with Gradle
