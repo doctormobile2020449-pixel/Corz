@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "corz-client",
+  "version": "${version}",
+  "name": "Corz Client Video Accurate Edition",
+  "description": "The exact video-referenced Corz Client featuring all 24 Combat modules, 27 DonutSMP tools, 69 Visual/Movement modules, and all 9 autonomous bots.",
+  "authors": ["OwnedByM4"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.corz.CorzClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*"
+  }
+}
